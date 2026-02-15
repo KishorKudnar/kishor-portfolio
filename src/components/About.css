@@ -1,0 +1,150 @@
+/* ===== ABOUT SECTION ===== */
+.about {
+  padding: 120px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("../assets/hex-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #050b18;
+}
+
+/* DARK DEPTH OVERLAY */
+.about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(0,255,255,0.1), transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(255,0,150,0.15), transparent 45%),
+    linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(5,10,25,0.95));
+  z-index: -1;
+}
+
+/* Title */
+.section-title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 60px;
+  color: white;
+}
+
+.section-title span {
+  background: linear-gradient(90deg, #00f5ff, #ff00c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Tilt Wrapper */
+.about-tilt {
+  display: flex;
+  justify-content: center;
+}
+
+/* Glass Card */
+.about-card {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 60px;
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255,255,255,0.15);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.7),
+    0 0 40px rgba(0,255,255,0.15);
+
+  color: white;
+  transition: 0.4s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.8),
+    0 0 60px rgba(255,0,200,0.25);
+}
+
+/* Paragraph */
+.about-card p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+/* Stats */
+.about-stats {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.about-stats div {
+  flex: 1;
+}
+
+.about-stats h3 {
+  font-size: 34px;
+  background: linear-gradient(90deg, #00f5ff, #ff00c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-stats span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about {
+    padding: 80px 25px;
+  }
+
+  .about-card {
+    padding: 40px;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+/* ===== UNIVERSAL MOBILE SECTION FIX ===== */
+@media (max-width: 900px) {
+  section {
+    padding: 80px 25px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-card {
+    padding: 35px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .about-stats h3 {
+    font-size: 24px;
+  }
+}

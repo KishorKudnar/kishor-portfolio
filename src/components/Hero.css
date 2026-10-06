@@ -177,8 +177,8 @@ background-attachment: fixed;
 /* IMAGE CONTAINER */
 .image-wrapper {
   position: relative;
-  width: 340px;
-  height: 340px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   overflow: hidden;
 

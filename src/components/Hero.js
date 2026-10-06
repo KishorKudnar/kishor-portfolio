@@ -1,5 +1,5 @@
 import "./Hero.css";
-import kishprofile from "../assets/kishprofile.png";
+import kishprofile from "../assets/profile-photo.png";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";

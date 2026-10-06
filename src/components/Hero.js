@@ -1,5 +1,5 @@
 import "./Hero.css";
-import profile from "../assets/profile.png";
+import kishprofile from "../assets/kishprofile.png";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
@@ -123,7 +123,7 @@ const Hero = () => {
         transition={{ repeat: Infinity, duration: 4 }}
       >
         <div className="image-wrapper">
-          <img src={profile} alt="Kishor Kudnar" />
+          <img src={kishprofile} alt="Kishor Kudnar" />
         </div>
       </motion.div>
 
